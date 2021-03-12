@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+#hotels-content{
+	background:#d9edf7;
+}
+
+.singlehotel{
+	overflow:hidden;
+	margin: 0 auto;
+    width: 55%;
+    margin-top:1.5%;
+    border: 2px solid #d9edf7;
+    background: #eef1f2c9;
+    border-radius: 10%;
+}
+
+.hotelinfo{
+display: inline-block;
+    float: left;
+    margin: 50 5 5 25;
+    text-align: center;
+    font: icon;
+    font-family: cursive;
+    font-size: large;
+}
+
+.separater{
+	display:inline-block;
+	float:left;
+    height: 15%;
+    margin: 20 20 20 20;
+	width:0;
+	border-left:1px solid;
+	border-color:#fff;
+}
+
+.hoteldetails{
+	margin: 50 5 5 25;
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    font-family: fantasy;
+    font-size: inherit;
+}
+
+.hotel-rooms{
+	margin-right:5px
+}
+
+.empty-num{
+	color:#ff7f36;
+}
+
+.reserve-box{
+	margin:60 5 5 25;
+	text-align:center;
+}
+
+#reserve-btn{
+	background-color:#f4ecec;
+}

@@ -1,0 +1,41 @@
+#配置服务器信息
+server:
+  port: 8001
+ 
+#spring配置
+spring:
+  application:
+    name: login  #应用名称
+    
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource  #当前数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver   #mysql驱动包
+    url: jdbc:mysql://localhost:3306/hotelmanagement?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false  #数据库名称
+    username: root
+    password: 4834
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp   
+
+
+#Mybatis配置
+mybatis:
+  type-aliases-package: com.lxc.springcloud.entities
+  mapper-locations: 
+  - classpath:mybatis/mapper/**/*.xml
+  
+#客户端注册进eureka服务列表
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+      #defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7001/eureka/
+  instance:
+    instance-id: login8001
+    prefer-ip-address: true

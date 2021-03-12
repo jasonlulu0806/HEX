@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+#register-form{
+	width: 23%;
+    height: 30%;
+    margin: 0 auto;
+    margin-top: 9%;
+}
+
+.page-title{
+	text-align:center;
+}
+
+.register{
+	float:right;
+}
