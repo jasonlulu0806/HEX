@@ -1,0 +1,261 @@
+﻿<!DOCTYPE HTML >
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Hex-Games 享受棋之乐</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="icon" href="img/core-img/hex.ico">
+<link rel="stylesheet" type="text/css" href="button.css"></link>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>       
+	<script th:inline="javascript">
+	     var user = [[${username}]];
+	     
+	</script>
+    <div align="center">
+	    <script type="text/javascript">document.write(user);</script>
+    </div>
+
+ <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+ </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area wow fadeInDown" data-wow-delay="500ms">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <!-- Logo Area -->
+                        <div class="logo">
+                            <a href="index.html"><img src="img/core-img/hex.ico" style="width:4%"></a>
+                            <a href="index.html"><img src="img/core-img/hex_text.png" style="width:22%"></a>
+                            <a href="index.html"><img src="img/core-img/hex_joy1.png" style="width:15%;margin-left:1.8%"></a>
+                        </div>
+
+                        <!-- Search & Login Area -->
+                        <div class="search-login-area d-flex align-items-center">
+                            <!-- Top Search Area -->
+                            <!-- <div class="top-search-area"> -->
+                                <!-- <form action="#" method="post"> -->
+                                    <!-- <input type="search" name="top-search" id="topSearch" placeholder="Search"> -->
+                                    <!-- <button type="submit" class="btn"><i class="fa fa-search"></i></button> -->
+                                <!-- </form> -->
+                            <!-- </div> -->
+                            <!-- Login Area -->
+                            <!-- <div class="login-area"> -->
+                                <!-- <a href="#"><span>Login / Register</span> <i class="fa fa-lock" aria-hidden="true"></i></a> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="egames-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="egamesNav">
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">游戏简介</a></li>
+                                    <li><a href="#">在线游戏</a>
+                                        <ul class="dropdown">
+                                            <li><a href="hex.html">人机对战</a></li>
+                                            <li><a href="single-game-review.html">好友对战</a></li>
+                                            <li><a href="single-game-review.html">随机匹配</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">交流论坛</a>
+                                        <!-- <ul class="dropdown"> -->
+                                            <!-- <li><a href="index.html">Home</a></li> -->
+                                            <!-- <li><a href="post.html">Articles</a></li> -->
+                                            <!-- <li><a href="single-post.html">Single Articles</a></li> -->
+                                            <!-- <li><a href="game-review.html">Game Review</a></li> -->
+                                            <!-- <li><a href="single-game-review.html">Single Game Review</a></li> -->
+                                            <!-- <li><a href="contact.html">Contact</a></li> -->
+                                        <!-- </ul> -->
+                                    </li>
+                                    <li><a href="GameRecord.html">个人战绩</a>
+                                        <!-- <ul class="dropdown"> -->
+                                            <!-- <li><a href="post.html">Articles</a></li> -->
+                                            <!-- <li><a href="single-post.html">Single Articles</a></li> -->
+                                        <!-- </ul> -->
+                                    </li>
+                                    <li><a href="About.html">关于我们</a>
+                                        <!-- <ul class="dropdown"> -->
+                                            <!-- <li><a href="game-review.html">Game Review</a></li> -->
+                                            <!-- <li><a href="single-game-review.html">Single Game Review</a></li> -->
+                                        <!-- </ul> -->
+                                    </li>
+                                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                                </ul>
+                            </div>
+							
+                            <!-- Nav End -->
+                        </div>
+							<div class="login-area">
+                                <!-- <a href="#"><span>Login / Register</span> <i class="fa fa-lock" aria-hidden="true"></i></a> -->
+                                <a href="#"><span>登录 / 注册</span></a>
+                        </div>
+						
+                        <!-- Top Social Info -->
+                        <!-- <div class="top-social-info"> -->
+                            <!-- <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a> -->
+                            <!-- <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> -->
+                            <!-- <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+                            <!-- <a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a> -->
+                            <!-- <a href="#" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a> -->
+                            <!-- <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> -->
+                        <!-- </div> -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+	
+	    <!-- ##### Hero Area Start ##### -->
+    <div class="hero-area">
+        <!-- Hero Post Slides -->
+        <div class="hero-post-slides owl-carousel">
+		
+            <!-- Single Slide -->
+            <div class="single-slide bg-img bg-overlay" style="background-image: url(img/bg-img/bck1.png);height:618px;">
+			
+			<!-- <div class="game-infos" style="color:#939393;position: relative;width: 18%;top: 17%;left: 10%;"> -->
+				<!-- <p>我方ID：<span>Jack</span></p> -->
+				<!-- <p>对方ID：<span>Tom</span></p> -->
+				<!-- <div class="btn-group" role="group" aria-label="..."> -->
+				  <!-- <span>选择队伍</span> -->
+				  <!-- <button type="button" class="btn btn-danger">红方</button> -->
+				  <!-- <button type="button" class="btn btn-primary">蓝方</button> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			
+                <!-- Blog Content -->
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+						<div style="position:absolute;left:637px;top:71px;width:500px;height:500px;">
+							<script type="text/javascript" src="board.js">//生成11*11的棋盘 和边界颜色</script>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Hero Area End ##### -->
+	
+<div class="container" style="border-width:1px;width:250px;">
+	<!-- <div id="val"> 我方：</div> -->
+	<!-- <div id="vall">对方：</div> -->
+	<!-- <form> -->
+		<!-- 选择队伍： -->
+		<!-- <input type="radio" id="red" name="Team" value="1" checked="checked"/>红方 -->
+		<!-- <input type="radio" id="blue" name="Team" value="2"/>蓝方 -->
+		<!-- <br></br> -->
+		<!-- 困难度  &nbsp; &nbsp;&nbsp; &nbsp; -->
+		<!-- <select id="diff"> -->
+			<!-- <option value="2">普通</option> -->
+			<!-- <option value="3" selected="selected">勇士</option> -->
+			<!-- <option value="4">王者</option> -->
+			<!-- <option value="5">地狱</option> -->
+		<!-- </select> -->
+	<!-- </form> -->
+
+	<!-- <button onclick="begin()">人机对战</button> -->
+	<!-- <br></br> -->
+	<!-- <button onclick="undocall()">回退</button> -->
+	<div style="position:absolute;left:220px;top:150px;width:500px;height:500px;margin-left: 12%;margin-top: 5%;margin-bottom:5%;">
+	<script type="text/javascript" src="board.js">//生成11*11的棋盘 和边界颜色</script>
+	</div>
+</div>
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area section-padding-100-0" style="padding-top: 2%;">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3" style="margin: 0 auto;">
+                        <div class="single-footer-widget mb-70 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="widget-title">
+                                <a href="index.html"><img src="img/core-img/hex.ico" style="width:20%"></a>
+								<a href="index.html"><img src="img/core-img/hex_text.png" style="width:58%"></a>
+								<a href="index.html"><img src="img/core-img/hex_joy1.png" style="width:45%;margin-left:22.8%"></a>
+							</div>
+                            <!-- <div class="widget-content"> -->
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam ut interdum ultricies.</p> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="copywrite-content">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-sm-5" style="margin-left:33%;">
+                        <!-- Copywrite Text -->
+                        <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  <a href="https://colorlib.com" target="_blank"> <i class="fa fa-heart-o" aria-hidden="true"></i> Powered by  Hikers</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+	<!-- <div id="test"></div> -->
+
+
+</body>
+</html>
